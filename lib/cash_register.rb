@@ -19,7 +19,7 @@ class CashRegister
           @@items << title
       end
     @total += temp_total
-
+binding.pry
   end
 
   def apply_discount
