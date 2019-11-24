@@ -20,7 +20,8 @@ class CashRegister
 
   def apply_discount
     if @discount == 0
-      puts "There is no discount to apply."
+      return_string =  "There is no discount to apply."
+      return return_string
     else
     decimal_discount = @discount.to_f / 100
     reduction = @total * decimal_discount
