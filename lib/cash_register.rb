@@ -2,7 +2,7 @@ require 'pry'
 
 class CashRegister
 
-  attr_accessor :total, :discount, :title, :price, :quantity
+  attr_accessor :total, :discount, :title, :price, :quantity, :last
 
   def initialize(discount = 0, total = 0)
     @title = []
@@ -19,6 +19,7 @@ class CashRegister
       quantity.times do
           @title << title
       end
+      @last = temp_total
     @total += temp_total
 
   end
@@ -47,9 +48,8 @@ class CashRegister
     quantity.times do
         @title << title
     end
-    @total -= temp_total
-    binding.pry
-    @total
+    @total -= @last
+    
   end
 
 
