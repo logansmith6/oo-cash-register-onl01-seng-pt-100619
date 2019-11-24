@@ -31,7 +31,7 @@ class CashRegister
     return_string = "After the discount, the total comes to $#{@total.to_i}."
     return return_string
     end
-    
+
   end
 
   def items
