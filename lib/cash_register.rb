@@ -49,7 +49,7 @@ class CashRegister
         @title << title
     end
     @total -= @last
-    
+
   end
 
 
