@@ -21,7 +21,7 @@ class CashRegister
   def apply_discount
     decimal_discount = @discount.to_f / 100
     reduction = @total.to_f * decimal_discount
-    @total.to_f -= reduction
+    @total -= reduction
     puts "discount applied. new total price: #{@total.to_f}"
     #binding.pry
   end
