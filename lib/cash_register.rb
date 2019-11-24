@@ -24,7 +24,7 @@ class CashRegister
     return_string = "After the discount, the total comes to $#{@total.to_f}"
     return return_string
     @total -= reduction
-    
+
     #binding.pry
   end
 
