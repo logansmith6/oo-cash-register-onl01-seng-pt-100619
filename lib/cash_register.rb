@@ -21,10 +21,10 @@ class CashRegister
   def apply_discount
     decimal_discount = @discount.to_f / 100
     reduction = @total.to_f * decimal_discount
-    return_string = "After the discount, the total comes to $#{@total.to_f}"
-    return return_string
     @total -= reduction
 
+    return_string = "After the discount, the total comes to $#{@total.to_f}"
+    return return_string
     #binding.pry
   end
 
