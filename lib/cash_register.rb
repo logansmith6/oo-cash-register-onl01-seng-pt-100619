@@ -19,12 +19,16 @@ class CashRegister
   end
 
   def apply_discount
+    if @discount == 0
+      puts "There is no discount to apply."
+    else
     decimal_discount = @discount.to_f / 100
     reduction = @total * decimal_discount
     @total -= reduction
 
     return_string = "After the discount, the total comes to $#{@total.to_i}."
     return return_string
+  end
     #binding.pry
   end
 
