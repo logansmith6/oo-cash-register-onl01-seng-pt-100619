@@ -23,7 +23,7 @@ class CashRegister
     reduction = @total * decimal_discount
     @total -= reduction
 
-    return_string = "After the discount, the total comes to $#{@total}."
+    return_string = "After the discount, the total comes to $#{@total.to_i}."
     return return_string
     #binding.pry
   end
