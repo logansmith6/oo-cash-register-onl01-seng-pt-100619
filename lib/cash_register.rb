@@ -22,6 +22,7 @@ class CashRegister
     reduction = @total * @discount
     @total -= reduction
     puts "discount applied. new total price: #{@total}"
+    binding.pry
   end
 
 end
