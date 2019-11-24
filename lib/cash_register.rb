@@ -20,7 +20,7 @@ class CashRegister
 
   def apply_discount
     decimal_discount = @discount.to_f / 100
-    reduction = @total.to_f * decimal_discount
+    reduction = @total * decimal_discount
     @total -= reduction
 
     return_string = "After the discount, the total comes to $#{@total}."
