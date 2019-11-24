@@ -19,8 +19,8 @@ class CashRegister
   end
 
   def apply_discount
-    temp_total = @total
-    @total -= temp_total * @discount
+    reduction = @total * @discount
+    @total -= reduction
     puts "discount applied. new total price: #{@total}"
   end
 
