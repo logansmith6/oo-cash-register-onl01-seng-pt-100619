@@ -49,6 +49,7 @@ class CashRegister
     end
     @total -= temp_total
     binding.pry
+    @total
   end
 
 
