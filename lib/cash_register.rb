@@ -50,5 +50,5 @@ class CashRegister
     @total -= temp_total
   end
 
-  
+
 end
